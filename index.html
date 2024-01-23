@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        *{
+            padding: 0;
+        }
+        body{
+            font-size: large;
+            margin-left: 3%;
+            background-color: whitesmoke;
+        }
+        .arrow {
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+          }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+          }
+    </style>
+</head>
+<body>
+    <form action="" method="post" autocomplete="off" target="_blank" style="margin-top: 3%;">
+        <label for="cn"><b>Country/Region</b></label><br>
+        <select id="cn" style="border-radius: 5px; width: 46%; height: 35px; background-color:lightgray;">
+            <option value="India">   India</option>
+            <option value="UAE">UAE</option>
+            <option value="EUROPE">EUROPE</option>
+            <option value="AUSTRALIA">AUSTRALIA</option>
+            <option value="PAK">PAKISTAN</option>    
+        </select><br><br>
+
+        <label for="lb"><b>Full Name (First and Last name)</b></label><br>
+        <input type="text" id="lb" style="border-radius: 5px; width: 45%; height: 30px;"><br><br>
+
+        <label for="mn"><b>Mobile number</b></label><br>
+        <input type="tel" id="mn" style="border-radius: 5px; width: 45%; height: 30px;">
+        <p style="margin-top: 2px; font-size: smaller;">May be used to assist delivery</p>
+    
+        <label for="pc"><b>Pincode</b></label><br>
+        <input type="text" id="pc" placeholder="  6 digits [0-9] PIN code" style="border-radius: 5px; width: 45%; height: 30px;"><br><br>
+    
+        <label for="dn"><b>Flat, House no., Building, Company, Apartment</b></label><br>
+        <input type="text" id="dn" style="border-radius: 5px; width: 45%; height: 30px;"><br><br>
+    
+        <label for="ad"><b>Area, Street, Sector, Village</b></label><br>
+        <input type="text" id="ad" style="border-radius: 5px; width: 45%; height: 30px;"><br><br>
+    
+        <label for="ld"><b>Landmark</b></label><br>
+        <input type="text" id="ld" placeholder="  E.g. near apollo hospital" style="border-radius: 5px;width: 45%; height: 30px;"><br><br>
+
+        <label for="tc"><b>Town/City</b></label><br>
+        <input type="text" id="tc" style="border-radius: 5px; width: 22%; height: 30px;"><br><br>
+
+        <div style="margin-top: -5.4%; margin-left: 24%;">
+            <label for="st"><b>State</b></label><br>
+            <select id="st" style="width: 28%; border-radius: 5px; height: 35px; background-color: lightgray;">
+                <option value="" disabled selected>Choose a State</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="TS">Telangana</option>
+                <option value="TN">TamilNadu</option>
+                <option value="HP">HIMACHAL Pradesh</option>
+            </select>
+        </div><br><br>
+
+        <input type="checkbox" style="font-size: small;">Make this my default address</p>
+
+        <b>Delivery Instructions (optional)</b><br>
+        <i class="arrow down"></i>
+        &nbsp;<a href="#" style="text-decoration: none;">Add preferences, notes, access codes and more</a><br><br>
+        <button style="background-color:gold; color: black; padding:10px; border-radius: 8px; border: 0;"><b>Add address</b></button>
+    
+    </form>       
+</body>
+</html>
